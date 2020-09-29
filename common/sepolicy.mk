@@ -23,8 +23,8 @@ BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
 
 ifeq ($(TARGET_USES_PREBUILT_VENDOR_SEPOLICY), true)
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
-    device/aosp/sepolicy/common/dynamic \
-    device/aosp/sepolicy/common/system
+    device/aosp/sepolicy/common/dynamic
+
 else
 BOARD_VENDOR_SEPOLICY_DIRS += \
     device/aosp/sepolicy/common/dynamic \
